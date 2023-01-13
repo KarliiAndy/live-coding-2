@@ -1,6 +1,8 @@
 // API
 const API_ENDPOINT = 'https://yesno.wtf/api';
 
+let answer = document.querySelector("#answer")
+
 /**
  * STEPS:
  *
@@ -11,3 +13,14 @@ const API_ENDPOINT = 'https://yesno.wtf/api';
  * 5. Optional: add loading/error states
  *
  */
+
+
+function fetchAnswer(){
+ fetch('https://yesno.wtf/assets/no/27-8befe9bcaeb66f865dd3ecdcf8821f51.gif')
+
+ .then(res => res.json())
+ .then(data=> {
+        answer.innerHTML 
+ });
+
+}
